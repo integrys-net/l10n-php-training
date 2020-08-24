@@ -1,0 +1,1373 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2020-01-15 15:50+0000\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: it_IT\n"
+"X-Generator: Poedit 2.3.1\n"
+
+msgid "\"Appaltatore\" è quel fornitore che contrattualmente è responsabile di una parte del progetto"
+msgstr "\"Appaltatore\" è quel fornitore che contrattualmente è responsabile di una parte del progetto"
+
+msgid "1: Il rappresentante deve rispondere nella lingua straniera durante il cantiere e nei seguenti 24 mesi 2: È possibile selezionare un solo lavoratore presente per l'intera durata del sito 3: Un lavoratore temporaneo non può essere selezionato"
+msgstr "1: Il rappresentante deve rispondere nella lingua straniera durante il cantiere e nei seguenti 24 mesi 2: È possibile selezionare un solo lavoratore presente per l'intera durata del sito 3: Un lavoratore temporaneo non può essere selezionato"
+
+msgid "33.1 Riparazione e manutenzione di prodotti in metallo, macchinari e complementi meccanici"
+msgstr "33.1 Riparazione e manutenzione di prodotti in metallo, macchinari e complementi meccanici"
+
+msgid "33.1 Urgente"
+msgstr "33.1 Urgente"
+
+msgid "33.1 Urgente e straordinaria riparazione di prodotti in metallo, macchinari e complementi meccanici"
+msgstr "33.1 Urgente e straordinaria riparazione di prodotti in metallo, macchinari e complementi meccanici"
+
+msgid "33.20 Installazione di macchine ed apparecchiature industriali"
+msgstr "33.20 Installazione di macchine ed apparecchiature industriali"
+
+msgid "43.99 Altre attività di lavori specializzati di costruzione n.c.a."
+msgstr "43.99 Altre attività di lavori specializzati di costruzione n.c.a."
+
+msgid "A1 articolo 12 paragrafo 1"
+msgstr "A1 articolo 12 paragrafo 1"
+
+msgid "A1 articolo 13 paragrafo 1"
+msgstr "A1 articolo 13 paragrafo 1"
+
+msgid "A chi si fornisce il servizio"
+msgstr "A chi si fornisce il servizio"
+
+msgid "Adeguamento salariale (ex. Dir. 96/71)"
+msgstr "Adeguamento salariale (ex. Dir. 96/71)"
+
+msgid "Adeguamento salariale"
+msgstr "Adeguamento salariale"
+
+msgid "Agenzia"
+msgstr "Agenzia"
+
+msgid "Agenzia di somministrazione"
+msgstr "Agenzia di somministrazione"
+
+msgid "Attuale"
+msgstr "Attuale"
+
+msgid "AGGIORNA STATO"
+msgstr "AGGIORNA STATO"
+
+msgid "Aggiorna stato"
+msgstr "Aggiorna stato"
+
+msgid "Aggiungi"
+msgstr "Aggiungi"
+
+msgid "Aggiungi cantiere"
+msgstr "Aggiungi cantiere"
+
+msgid "Aggiungi al cantiere"
+msgstr "Aggiungi al cantiere"
+
+msgid "Aggiungi appaltatore"
+msgstr "Aggiungi appaltatore"
+
+msgid "Aggiungi appaltatori al cantiere"
+msgstr "Aggiungi appaltatori al cantiere"
+
+msgid "Aggiungi dipendente"
+msgstr "Aggiungi dipendente"
+
+msgid "Aggiungi dipendente nel cantiere"
+msgstr "Aggiungi dipendente nel cantiere"
+
+msgid "Aggiungi Estratto"
+msgstr "Aggiungi Estratto"
+
+msgid "Aggiungi indirizzo"
+msgstr "Aggiungi indirizzo"
+
+msgid "Aggiungi informazioni"
+msgstr "Aggiungi informazioni"
+
+msgid "Aggiungi la precedente trasferta"
+msgstr "Aggiungi la precedente trasferta"
+
+msgid "Aggiungi lavoratore"
+msgstr "Aggiungi lavoratore"
+
+msgid "Aggiungi lingua dipendente"
+msgstr "Aggiungi lingua dipendente"
+
+msgid "Aggiungi nuova anagrafica"
+msgstr "Aggiungi nuova anagrafica"
+
+msgid "Aggiungi nuova azienda"
+msgstr "Aggiungi nuova azienda"
+
+msgid "Aggiungi nuovo cantiere"
+msgstr "Aggiungi nuovo cantiere"
+
+msgid "Aggiungi nuovo cliente"
+msgstr "Aggiungi nuovo cliente"
+
+msgid "Aggiungi nuovo dipendente"
+msgstr "Aggiungi nuovo dipendente"
+
+msgid "Aggiungi nuovo dipendente somministrato"
+msgstr "Aggiungi nuovo dipendente somministrato"
+
+msgid "Aggiungi nuovo fornitore"
+msgstr "Aggiungi nuovo fornitore"
+
+msgid "Aggiungi nuovo Rappresentante"
+msgstr "Aggiungi nuovo Rappresentante"
+
+msgid "Aggiungi nuovo ruolo"
+msgstr "Aggiungi nuovo ruolo"
+
+msgid "Aggiungi nuovo utente"
+msgstr "Aggiungi nuovo utente"
+
+msgid "Aggiungi rappresentante"
+msgstr "Aggiungi rappresentante"
+
+msgid "Aggiungi trasferte precedenti"
+msgstr "Aggiungi trasferte precedenti"
+
+msgid "Aggiungi ulteriori indirizzi"
+msgstr "Aggiungi ulteriori indirizzi"
+
+msgid "Aggiungi un nuovo appaltatore"
+msgstr "Aggiungi un nuovo appaltatore"
+
+msgid "Aggiungi un nuovo cliente"
+msgstr "Aggiungi un nuovo cliente"
+
+msgid "Aggiungi un nuovo dipendente"
+msgstr "Aggiungi un nuovo dipendente"
+
+msgid "Aggiungi un nuovo dipendente somministrato"
+msgstr "Aggiungi un nuovo dipendente somministrato"
+
+msgid "Aggiungi una nuova azienda"
+msgstr "Aggiungi una nuova azienda"
+
+msgid "al giorno"
+msgstr "al giorno"
+
+msgid "Alcuni dati sono sbagliati o mancanti, correggerli e riprovare ad inviare la form"
+msgstr "Alcuni dati sono sbagliati o mancanti, correggerli e riprovare ad inviare la form"
+
+msgid "Allega documenti"
+msgstr "Allega documenti"
+
+msgid "Altri indirizzi"
+msgstr "Altri indirizzi"
+
+msgid "Anni di esperienza nella mansione"
+msgstr "Anni di esperienza nella mansione"
+
+msgid "Anno solare in corso"
+msgstr "Anno solare in corso"
+
+msgid "Anno solare precedente"
+msgstr "Anno solare precedente"
+
+msgid "Aperti"
+msgstr "Aperti"
+
+msgid "Apertura nei prossimi 30 giorni"
+msgstr "Apertura nei prossimi 30 giorni"
+
+msgid "Apertura nei prossimi 365 giorni"
+msgstr "Apertura nei prossimi 365 giorni"
+
+msgid "Apertura nei prossimi 7 giorni"
+msgstr "Apertura nei prossimi 7 giorni"
+
+msgid "Appaltatori"
+msgstr "Appaltatori"
+
+msgid "APPALTATORI"
+msgstr "APPALTATORI"
+
+msgid "Apprendista"
+msgstr "Apprendista"
+
+msgid "Assegnazioni dipendenti somministrati"
+msgstr "Assegnazioni dipendenti somministrati"
+
+msgid "Assente"
+msgstr "Assente"
+
+msgid "Attenzione"
+msgstr "Attenzione"
+
+msgid "ATTENZIONE NESSUN RAPPRESENTANTE COLLEGATO SI PREGA DI CREARE IL RAPPRESENTANTE"
+msgstr "ATTENZIONE NESSUN RAPPRESENTANTE COLLEGATO SI PREGA DI CREARE IL RAPPRESENTANTE"
+
+msgid "Attenzione non hai selezionato alcuna lingua per il cliente! Tutte le comunicazioni saranno inviate nella lingua di default (Italiano)"
+msgstr "Attenzione non hai selezionato alcuna lingua per il cliente! Tutte le comunicazioni saranno inviate nella lingua di default (Italiano)"
+
+msgid "Attivi"
+msgstr "Attivi"
+
+msgid "Attività"
+msgstr "Attività"
+
+msgid "ATTIVITÀ"
+msgstr "ATTIVITÀ"
+
+msgid "Attività all'estero"
+msgstr "Attività all'estero"
+
+msgid "Attività comuni"
+msgstr "Attività comuni"
+
+msgid "Attività con prestazione di servizio: a chi si fornisce il servizio"
+msgstr "Attività con prestazione di servizio: a chi si fornisce il servizio"
+
+msgid "Attività selezionate recentemente"
+msgstr "Attività selezionate recentemente"
+
+msgid "Attività svolte presso il cliente"
+msgstr "Attività svolte presso il cliente"
+
+msgid "Attivo"
+msgstr "Attivo"
+
+msgid "Attualmente noto come"
+msgstr "Attualmente noto come"
+
+msgid "Autore"
+msgstr "Autore"
+
+msgid "Azienda"
+msgstr "Azienda"
+
+msgid "AZIENDA"
+msgstr "AZIENDA"
+
+msgid "Azienda infragruppo"
+msgstr "Azienda infragruppo"
+
+msgid "Cambia"
+msgstr "Cambia"
+
+msgid "Cancella"
+msgstr "Cancella"
+
+msgid "Cancellati"
+msgstr "Cancellati"
+
+msgid "Cancellato"
+msgstr "Cancellato"
+
+msgid "Cantiere"
+msgstr "Cantiere"
+
+msgid "Cantieri"
+msgstr "Cantieri"
+
+msgid "Cantieri totali"
+msgstr "Cantieri totali"
+
+msgid "CAP"
+msgstr "CAP"
+
+msgid "Carica adesso"
+msgstr "Carica adesso"
+
+msgid "Carica altri"
+msgstr "Carica altri"
+
+msgid "Chiudi"
+msgstr "Chiudi"
+
+msgid "Chiusi negli ultimi 365 giorni"
+msgstr "Chiusi negli ultimi 365 giorni"
+
+msgid "Città"
+msgstr "Città"
+
+msgid "Città di nascita"
+msgstr "Città di nascita"
+
+msgid "Cittadinanza"
+msgstr "Cittadinanza"
+
+msgid "Cliente"
+msgstr "Cliente"
+
+msgid "CLIENTE"
+msgstr "CLIENTE"
+
+msgid "Cliente finale"
+msgstr "Cliente finale"
+
+msgid "Clienti"
+msgstr "Clienti"
+
+msgid "Clienti più attivi"
+msgstr "Clienti più attivi"
+
+msgid "Clienti totali"
+msgstr "Clienti totali"
+
+msgid "Codice Fiscale"
+msgstr "Codice Fiscale"
+
+msgid "Codice identificativo dell'azienda"
+msgstr "Codice identificativo dell'azienda"
+
+msgid "Cognome"
+msgstr "Cognome"
+
+msgid "Come iniziare"
+msgstr "Come iniziare"
+
+msgid "Compilare queste informazioni per il calcolo dell'esenzione dalla dichiarazione di distacco"
+msgstr "Compilare queste informazioni per il calcolo dell'esenzione dalla dichiarazione di distacco"
+
+msgid "Completato"
+msgstr "Completato"
+
+msgid "Comunicazioni"
+msgstr "Comunicazioni"
+
+msgid "COMUNICAZIONI CANTIERE"
+msgstr "COMUNICAZIONI CANTIERE"
+
+msgid "CON"
+msgstr "CON"
+
+msgid "Confermato"
+msgstr "Confermato"
+
+msgid "Conferma dati inseriti"
+msgstr "Conferma dati inseriti"
+
+msgid "Confermi che tutti i dati inseriti sono corretti?"
+msgstr "Confermi che tutti i dati inseriti sono corretti?"
+
+msgid "Con \"servizi per l'Azienda\" si intendono tutte quelle prestazioni fornite nel solo interesse della propria Azienda, senza la richiesta di un cliente finale, ad esempio l'attività di promozione ed intermediazione svolta tipicamente dal commerciale estero nel contatto coi nuovi clienti."
+msgstr "Con \"servizi per l'Azienda\" si intendono tutte quelle prestazioni fornite nel solo interesse della propria Azienda, senza la richiesta di un cliente finale, ad esempio l'attività di promozione ed intermediazione svolta tipicamente dal commerciale estero nel contatto coi nuovi clienti."
+
+msgid "Condizioni salariali"
+msgstr "Condizioni salariali"
+
+msgid "Conferma di non voler procedere con l'invio della dichiarazione alle autorità straniere prima di iniziare le attività lavorative"
+msgstr "Conferma di non voler procedere con l'invio della dichiarazione alle autorità straniere prima di iniziare le attività lavorative"
+
+msgid "Confermare che il rappresentante selezionato sia"
+msgstr "Confermare che il rappresentante selezionato sia"
+
+msgid "Confermi che il lavoro del lavoratore è lo stesso in anagrafica"
+msgstr "Confermi che il lavoro del lavoratore è lo stesso in anagrafica"
+
+msgid "Confermi che l'indirizzo del cantiere è"
+msgstr "Confermi che l'indirizzo del cantiere è"
+
+msgid "Confermi che l'indirizzo del cantiere dove si sta distaccando il dipendente coincide con quello"
+msgstr "Confermi che l'indirizzo del cantiere dove si sta distaccando il dipendente coincide con quello"
+
+msgid "Coniugato"
+msgstr "Coniugato"
+
+msgid "Contatti"
+msgstr "Contatti"
+
+msgid "Contatti commerciali"
+msgstr "Contatti commerciali"
+
+msgid "Contatti Elettronici"
+msgstr "Contatti Elettronici"
+
+msgid "Contratti"
+msgstr "Contratti"
+
+msgid "Contratto di lavoro a tempo determinato"
+msgstr "Contratto di lavoro a tempo determinato"
+
+msgid "Contratto di lavoro a tempo indeterminato"
+msgstr "Contratto di lavoro a tempo indeterminato"
+
+msgid "Contratto di lavoro subordinato"
+msgstr "Contratto di lavoro subordinato"
+
+msgid "Contratto di subappalto"
+msgstr "Contratto di subappalto"
+
+msgid "Contratto nazionale:"
+msgstr "Contratto nazionale:"
+
+msgid "Controllare i dati inseriti"
+msgstr "Controllare i dati inseriti"
+
+msgid "Controllo giorni di cantiere per dichiarazione"
+msgstr "Controllo giorni di cantiere per dichiarazione"
+
+msgid "Controparti"
+msgstr "Controparti"
+
+msgid "Crea cantiere"
+msgstr "Crea cantiere"
+
+msgid "Crea Rappresentante"
+msgstr "Crea Rappresentante"
+
+msgid "Credenziali Timesheet"
+msgstr "Credenziali Timesheet"
+
+msgid "Dal 1998, la nostra azienda è al servizio di aziende e privati ​​nei loro obiettivi di mobilità globale."
+msgstr "Dal 1998, la nostra azienda è al servizio di aziende e privati ​​nei loro obiettivi di mobilità globale."
+
+msgid "Dashboard"
+msgstr "Dashboard"
+
+msgid "Data"
+msgstr "Data"
+
+msgid "Data della visura camerale"
+msgstr "Data della visura camerale"
+
+msgid "Data di costituzione dell'azienda"
+msgstr "Data di costituzione dell'azienda"
+
+msgid "Data di Emissione"
+msgstr "Data di Emissione"
+
+msgid "Data di fine cantiere"
+msgstr "Data di fine cantiere"
+
+msgid "Data di inizio cantiere"
+msgstr "Data di inizio cantiere"
+
+msgid "Data di nascita"
+msgstr "Data di nascita"
+
+msgid "Data di scadenza del DURC"
+msgstr "Data di scadenza del DURC"
+
+msgid "Data effettiva"
+msgstr "Data effettiva"
+
+msgid "Data fine trasferta"
+msgstr "Data fine trasferta"
+
+msgid "Data inizio trasferta"
+msgstr "Data inizio trasferta"
+
+msgid "DATA INSERIMENTO"
+msgstr "DATA INSERIMENTO"
+
+msgid "Data Registrazione"
+msgstr "Data Registrazione"
+
+msgid "Data Richiesta"
+msgstr "Data Richiesta"
+
+msgid "Date selezionate:"
+msgstr "Date selezionate:"
+
+msgid "Dati contrattuali:"
+msgstr "Dati contrattuali:"
+
+msgid "Dati dell'azienda"
+msgstr "Dati dell'azienda"
+
+msgid "Dati dipendente"
+msgstr "Dati dipendente"
+
+msgid "Dati identificativi"
+msgstr "Dati identificativi"
+
+msgid "Dati legali"
+msgstr "Dati legali"
+
+msgid "Dati relativi al Legale Rappresentate"
+msgstr "Dati relativi al Legale Rappresentate"
+
+msgid "Dati specifici"
+msgstr "Dati specifici"
+
+msgid "del"
+msgstr "del"
+
+msgid "Delega un utente"
+msgstr "Delega un utente"
+
+msgid "Descrizione"
+msgstr "Descrizione"
+
+msgid "Descrizione riassuntiva della mansione"
+msgstr "Descrizione riassuntiva della mansione"
+
+msgid "Dettagli del luogo dove il servizio è fornito"
+msgstr "Dettagli del luogo dove il servizio è fornito"
+
+msgid "Dettagli dell'azienda"
+msgstr "Dettagli dell'azienda"
+
+msgid "Dettaglio"
+msgstr "Dettaglio"
+
+msgid "Destinazione"
+msgstr "Destinazione"
+
+msgid "Diaria per Trasferte Estero Imponibile"
+msgstr "Diaria per Trasferte Estero Imponibile"
+
+msgid "Dichiarazione di distacco"
+msgstr "Dichiarazione di distacco"
+
+msgid "Dichiarazione unica di regolarità contributiva"
+msgstr "Dichiarazione unica di regolarità contributiva"
+
+msgid "Dipendente"
+msgstr "Dipendente"
+
+msgid "DIPENDENTE"
+msgstr "DIPENDENTE"
+
+msgid "Dipendente somministrato"
+msgstr "Dipendente somministrato"
+
+msgid "Dipendenti"
+msgstr "Dipendenti"
+
+msgid "DIPENDENTI"
+msgstr "DIPENDENTI"
+
+msgid "Dipendenti / Fornitori /Clienti / Rappresentanti"
+msgstr "Dipendenti / Fornitori /Clienti / Rappresentanti"
+
+msgid "Dipendenti assegnati"
+msgstr "Dipendenti assegnati"
+
+msgid "Dipendenti somministrati"
+msgstr "Dipendenti somministrati"
+
+msgid "Distribuzione Cantieri nelle varie Nazioni"
+msgstr "Distribuzione Cantieri nelle varie Nazioni"
+
+msgid "Distribuzione dipendenti nel tempo"
+msgstr "Distribuzione dipendenti nel tempo"
+
+msgid "Documenti"
+msgstr "Documenti"
+
+msgid "DOCUMENTI CANTIERE"
+msgstr "DOCUMENTI CANTIERE"
+
+msgid "Documenti commerciali"
+msgstr "Documenti commerciali"
+
+msgid "Documento N°"
+msgstr "Documento N°"
+
+msgid "Dopo aver creato il ruolo, è necessario assegnargli le autorizzazioni"
+msgstr "Dopo aver creato il ruolo, è necessario assegnargli le autorizzazioni"
+
+msgid "Dove verrà fornito il servizio"
+msgstr "Dove verrà fornito il servizio"
+
+msgid "È un utente A&P"
+msgstr "È un utente A&P"
+
+msgid "Elenco dei distacchi precedenti registrati nel portale"
+msgstr "Elenco dei distacchi precedenti registrati nel portale"
+
+msgid "Elenco generale di tutti gli utenti di tutte le aziende sulle quali l’utente collegato ha diritti amministrativi"
+msgstr "Elenco generale di tutti gli utenti di tutte le aziende sulle quali l’utente collegato ha diritti amministrativi"
+
+msgid "Elimina"
+msgstr "Elimina"
+
+msgid "Email"
+msgstr "E-mail"
+
+msgid "Emesso da"
+msgstr "Emesso da"
+
+msgid "Esente"
+msgstr "Esente"
+
+msgid "Esente / Obbligatoria"
+msgstr "Esente / Obbligatoria"
+
+msgid "Espandi"
+msgstr "Espandi"
+
+msgid "FAQ principali"
+msgstr "FAQ principali"
+
+msgid "Femminile"
+msgstr "Femminile"
+
+msgid "Filiale"
+msgstr "Filiale"
+
+msgid "Filtra per azienda"
+msgstr "Filtra per azienda"
+
+msgid "Fine Validità"
+msgstr "Fine Validità"
+
+msgid "Firma"
+msgstr "Firma"
+
+msgid "Fornitore"
+msgstr "Fornitore"
+
+msgid "Fornitori"
+msgstr "Fornitori"
+
+msgid "Foto"
+msgstr "Foto"
+
+msgid "Genere"
+msgstr "Genere"
+
+msgid "Giorni Cantiere / Lavoro per mese solare"
+msgstr "Giorni Cantiere / Lavoro per mese solare"
+
+msgid "Giorni cantiere per nazione"
+msgstr "Giorni cantiere per nazione"
+
+msgid "Giorni di lavoro"
+msgstr "Giorni di lavoro"
+
+msgid "Guida"
+msgstr "Guida"
+
+msgid "Guida all'utilizzo"
+msgstr "Guida all'utilizzo"
+
+msgid "I miei utenti"
+msgstr "I miei utenti"
+
+msgid "Il Cantiere è stato pianificato dal giorno:"
+msgstr "Il Cantiere è stato pianificato dal giorno:"
+
+msgid "Il periodo di lavoro del dipendente coincide con quello del cantiere"
+msgstr "Il periodo di lavoro del dipendente coincide con quello del cantiere"
+
+msgid "Imposta i dettagli dell'azienda"
+msgstr "Imposta i dettagli dell'azienda"
+
+msgid "in arancio, i giorni lavorativi totali"
+msgstr "in arancio, i giorni lavorativi totali"
+
+msgid "In attesa"
+msgstr "In attesa"
+
+msgid "In Attesa"
+msgstr "In Attesa"
+
+msgid "in azzurro, i giorni di cantiere totali"
+msgstr "in azzurro, i giorni di cantiere totali"
+
+msgid "In base ai dati inseriti, la dichiarazione di distacco non è necessaria"
+msgstr "In base ai dati inseriti, la dichiarazione di distacco non è necessaria"
+
+msgid "In elaborazione"
+msgstr "In elaborazione"
+
+msgid "In Elaborazione"
+msgstr "In Elaborazione"
+
+msgid "Incarico non attivo"
+msgstr "Incarico non attivo"
+
+msgid "Indietro"
+msgstr "Indietro"
+
+msgid "Indicare il periodo temporale interessato:"
+msgstr "Indicare il periodo temporale interessato:"
+
+msgid "Inserire una breve descrizione dell'attività che verrà svolta dall'appaltatore se desiderato"
+msgstr "Inserire una breve descrizione dell'attività che verrà svolta dall'appaltatore se desiderato"
+
+msgid "Indirizzi"
+msgstr "Indirizzi"
+
+msgid "Indirizzo"
+msgstr "Indirizzo"
+
+msgid "Indirizzo del cantiere"
+msgstr "Indirizzo del cantiere"
+
+msgid "Indirizzo del luogo dove verrà fornito il servizio"
+msgstr "Indirizzo del luogo dove verrà fornito il servizio"
+
+msgid "Indirizzo del luogo ove si fornirà il servizio"
+msgstr "Indirizzo del luogo ove si fornirà il servizio"
+
+msgid "Indirizzo di Domicilio / Residenza"
+msgstr "Indirizzo di Domicilio / Residenza"
+
+msgid "Indirizzo di Domicilio o Residenza + indirizzi extra"
+msgstr "Indirizzo di Domicilio o Residenza + indirizzi extra"
+
+msgid "Indirizzo extra"
+msgstr "Indirizzo extra"
+
+msgid "Info"
+msgstr "Info"
+
+msgid "Informazioni"
+msgstr "Informazioni"
+
+msgid "Informazioni e articoli"
+msgstr "Informazioni e articoli"
+
+msgid "Informazioni sull'Agenzia di Somministrazione"
+msgstr "Informazioni sull'Agenzia di Somministrazione"
+
+msgid "Inizio Validità"
+msgstr "Inizio Validità"
+
+msgid "Inserire il lavoro svolto dal dipendente"
+msgstr "Inserire il lavoro svolto dal dipendente"
+
+msgid "Inserire il lavoro svolto dal dipendente, nel caso in cui questo sia diverso da quello in anagrafica"
+msgstr "Inserire il lavoro svolto dal dipendente, nel caso in cui questo sia diverso da quello in anagrafica"
+
+msgid "Inserire l'azienda dalla quale è stato ricevuto il"
+msgstr "Inserire l'azienda dalla quale è stato ricevuto il"
+
+msgid "Inserire le date di inizio e fine trasferta del lavoratore"
+msgstr "Inserire le date di inizio e fine trasferta del lavoratore"
+
+msgid "Inserire luogo di arrivo nella nazione del cantiere. (Aereoporto/Stazione)"
+msgstr "Inserire luogo di arrivo nella nazione del cantiere. (Aereoporto/Stazione)"
+
+msgid "Inserire password"
+msgstr "Inserire password"
+
+msgid "Inserire primo alloggio nella nazione del cantiere"
+msgstr "Inserire primo alloggio nella nazione del cantiere"
+
+msgid "Inserire una breve descrizione della mansione"
+msgstr "Inserire una breve descrizione della mansione"
+
+msgid "Inserire una password per l'utilizzo della firma del Rappresentante legale"
+msgstr "Inserire una password per l'utilizzo della firma del Rappresentante legale"
+
+msgid "Inserisci la data di inizio e fine della fornitura di servizio"
+msgstr "Inserisci la data di inizio e fine della fornitura di servizio"
+
+msgid "Inserisci nuovo rappresentante legale"
+msgstr "Inserisci nuovo rappresentante legale"
+
+msgid "Inserisci un nuovo dipendente"
+msgstr "Inserisci un nuovo dipendente"
+
+msgid "Invia"
+msgstr "Invia"
+
+msgid "Iscriviti"
+msgstr "Iscriviti"
+
+msgid "Iscriviti alla newsletter"
+msgstr "Iscriviti alla newsletter"
+
+msgid "Istituto di previdenza sociale, dichiarazione di regolarità fiscale e contributiva, etc..."
+msgstr "Istituto di previdenza sociale, dichiarazione di regolarità fiscale e contributiva, etc..."
+
+msgid "L'Azienda"
+msgstr "L'Azienda"
+
+msgid "L’azienda ha effettuato altri cantiere nella stessa nazione negli ultimi 12 mesi"
+msgstr "L’azienda ha effettuato altri cantiere nella stessa nazione negli ultimi 12 mesi"
+
+msgid "La maggioranza dei contratti coi vostri clienti sono conclusi in Italia"
+msgstr "La maggioranza dei contratti coi vostri clienti sono conclusi in Italia"
+
+msgid "La trasferta è stata pianificata:"
+msgstr "La trasferta è stata pianificata:"
+
+msgid "L'appaltatore sarà attivo per l'intera durata della prestazione di servizi"
+msgstr "L'appaltatore sarà attivo per l'intera durata della prestazione di servizi"
+
+msgid "Lavoratori somministrati"
+msgstr "Lavoratori somministrati"
+
+msgid "Lavoro in appalto"
+msgstr "Lavoro in appalto"
+
+msgid "L'azienda ha l'obbligo di notificare una Dichiarazione di Distacco all'Autorità Nazionale responsabile"
+msgstr "L'azienda ha l'obbligo di notificare una Dichiarazione di Distacco all'Autorità Nazionale responsabile"
+
+msgid "L'azienda in questo caso è esente dalla notifica di una dichiarazione di distacco all'Autorità nazionale"
+msgstr "L'azienda in questo caso è esente dalla notifica di una dichiarazione di distacco all'Autorità nazionale"
+
+msgid "Le trasferta è stata pianificata dal giorno"
+msgstr "Le trasferta è stata pianificata dal giorno"
+
+msgid "Legale rappresentante"
+msgstr "Legale rappresentante"
+
+msgid "L'indirizzo del cantiere coincide con quello del cliente finale"
+msgstr "L'indirizzo del cantiere coincide con quello del cliente finale"
+
+msgid "Lingua"
+msgstr "Lingua"
+
+msgid "Lingua parlata"
+msgstr "Lingua parlata"
+
+msgid "Lista Ordini"
+msgstr "Lista Ordini"
+
+msgid "Livello di educazione"
+msgstr "Livello di educazione"
+
+msgid "Lo Studio A&P notificherà la dichiarazione di distacco alle autorità estere prima dell'inizio della prestazione di servizio"
+msgstr "Lo Studio A&P notificherà la dichiarazione di distacco alle autorità estere prima dell'inizio della prestazione di servizio"
+
+msgid "Lo studio rappresenterà L'azienda in caso di verifica da parte degli ispettori del lavoro straniero durante le attività lavorative all'estero e nei successivi 24 mesi."
+msgstr "Lo studio rappresenterà L'azienda in caso di verifica da parte degli ispettori del lavoro straniero durante le attività lavorative all'estero e nei successivi 24 mesi."
+
+msgid "Location: padiglione fieristico - Sala Congressi - Azienda - Hotel"
+msgstr "Location: padiglione fieristico - Sala Congressi - Azienda - Hotel"
+
+msgid "Logo"
+msgstr "Logo"
+
+msgid "Luogo d'arrivo"
+msgstr "Luogo d'arrivo"
+
+msgid "Mappa cantieri"
+msgstr "Mappa cantieri"
+
+msgid "Maschile"
+msgstr "Maschile"
+
+msgid "Modifica / Aggiungi Anagrafica"
+msgstr "Modifica / Aggiungi Anagrafica"
+
+msgid "Nazione"
+msgstr "Nazione"
+
+msgid "NAZIONE"
+msgstr "NAZIONE"
+
+msgid "Nazione di Domicilio/Residenza"
+msgstr "Nazione di Domicilio/Residenza"
+
+msgid "Nazione di Nascita"
+msgstr "Nazione di Nascita"
+
+msgid "Nel caso non siano ancora presenti dei rappresentanti legali nel menu a tendina sopra dedicato, è possibile aggiungerne di nuovi tramite il bottone Aggiungi nuovo rappresentante. Ti ricordiamo che inserire il rapresentante legale della tua azienda è un passaggio fondamntale e che senza questa impostazione, sarai passibile di sanzioni ..."
+msgstr "Nel caso non siano ancora presenti dei rappresentanti legali nel menu a tendina sopra dedicato, è possibile aggiungerne di nuovi tramite il bottone Aggiungi nuovo rappresentante. Ti ricordiamo che inserire il rapresentante legale della tua azienda è un passaggio fondamntale e che senza questa impostazione, sarai passibile di sanzioni ..."
+
+msgid "Nessun documento caricato !"
+msgstr "Nessun documento caricato !"
+
+msgid "Nessuna richiesta"
+msgstr "Nessuna richiesta"
+
+msgstr "News"
+msgid "News"
+
+msgid "No"
+msgstr "No"
+
+msgid "Nome"
+msgstr "Nome"
+
+msgid "Nome Azienda"
+msgstr "Nome Azienda"
+
+msgid "Nome commerciale"
+msgstr "Nome commerciale"
+
+msgid "Nome della azienda"
+msgstr "Nome della azienda"
+
+msgid "Nome dell'azienda"
+msgstr "Nome dell'azienda"
+
+msgid "Nome Estratto"
+msgstr "Nome Estratto"
+
+msgid "Non Coniugato"
+msgstr "Non Coniugato"
+
+msgid "Non è fornito alcun servizio a terzi o all'azienda stessa: partecipazione ad eventi o seminari in quanto uditori, presenza a fiere di settore non come espositore etc.."
+msgstr "Non è fornito alcun servizio a terzi o all'azienda stessa: partecipazione ad eventi o seminari in quanto uditori, presenza a fiere di settore non come espositore etc.."
+
+msgid "Non riesci a trovare il dipendente che desideri dalla finestra"
+msgstr "Non riesci a trovare il dipendente che desideri dalla finestra"
+
+msgid "Non riesci a trovare il rappresentante desiderato nella lista a lato"
+msgstr "Non riesci a trovare il rappresentante desiderato nella lista a lato"
+
+msgid "Non riesci a trovare l'appaltatore desiderato dalla finestra"
+msgstr "Non riesci a trovare l'appaltatore desiderato dalla finestra"
+
+msgid "Non riesci a trovare l'azienda desiderata dalla lista sulla destra"
+msgstr "Non riesci a trovare l'azienda desiderata dalla lista sulla destra"
+
+msgid "Non trovi la tua attività qui sopra ? Vuoi visualizzare altre attività"
+msgstr "Non trovi la tua attività qui sopra ? Vuoi visualizzare altre attività"
+
+msgid "Note"
+msgstr "Note"
+
+msgid "Numero civico"
+msgstr "Numero civico"
+
+msgid "Numero di dipendenti attualmente impiegati dell'azienda"
+msgstr "Numero di dipendenti attualmente impiegati dell'azienda"
+
+msgid "Numero di dipendenti attualmente impiegati in Italia"
+msgstr "Numero di dipendenti attualmente impiegati in Italia"
+
+msgid "Numero di dipendenti distaccati all'estero"
+msgstr "Numero di dipendenti distaccati all'estero"
+
+msgid "Obbligatoria"
+msgstr "Obbligatoria"
+
+msgid "Orario lavorativo secondo il contratto di riferimento"
+msgstr "Orario lavorativo secondo il contratto di riferimento"
+
+msgid "ORDINE CANTIERE"
+msgstr "ORDINE CANTIERE"
+
+msgid "ORDINE CANTIERE N°"
+msgstr "ORDINE CANTIERE N°"
+
+msgid "Paese di nascita"
+msgstr "Paese di nascita"
+
+msgid "Paese dove il servizio è fornito"
+msgstr "Paese dove il servizio è fornito"
+
+msgid "Paesi di validità:"
+msgstr "Paesi di validità:"
+
+msgid "Partita Iva"
+msgstr "Partita Iva"
+
+msgid "Password"
+msgstr "Password"
+
+msgid "Password per la firma"
+msgstr "Password per la firma"
+
+msgid "Per \"lavoro in appalto\" si intende quel servizio richiesto da un cliente nel più ampio quadro di un contratto con un terzo cliente finale, il quale si giova della prestazione."
+msgstr "Per \"lavoro in appalto\" si intende quel servizio richiesto da un cliente nel più ampio quadro di un contratto con un terzo cliente finale, il quale si giova della prestazione."
+
+msgid "Per \"servizio ad un cliente finale\" si intende una prestazione a favore di un soggetto col quale si ha una diretta relazione commerciale"
+msgstr "Per \"servizio ad un cliente finale\" si intende una prestazione a favore di un soggetto col quale si ha una diretta relazione commerciale"
+
+msgid "Per attività con prestazione di servizio si intendono tutte quelle attività che soddisfano un bisogno economico/commerciale di un cliente, di un terzo o dell'azienda stessa, fornite tramite il lavoro dipendente. Per esempio, l'attività tipica del commerciale estero viene considerata una prestazione di servizio (di intermediazione o rappresentanza) resa a beneficio dell'azienda stessa. ----- Si considerano prestazioni di servizio anche quelle attività che non necessariamente vengono pagate in denaro, ma fanno parte di un più vasto accordo contrattuale (es. manutenzione gratuita di un bene in garanzia)"
+msgstr "Per attività con prestazione di servizio si intendono tutte quelle attività che soddisfano un bisogno economico/commerciale di un cliente, di un terzo o dell'azienda stessa, fornite tramite il lavoro dipendente. Per esempio, l'attività tipica del commerciale estero viene considerata una prestazione di servizio (di intermediazione o rappresentanza) resa a beneficio dell'azienda stessa. ----- Si considerano prestazioni di servizio anche quelle attività che non necessariamente vengono pagate in denaro, ma fanno parte di un più vasto accordo contrattuale (es. manutenzione gratuita di un bene in garanzia)"
+
+msgid "Per attività senza prestazione di servizio si intendono quelle attività il cui espletamento non soddisfa direttamente un bisogno economico o commerciale di un cliente, di un terzo o dell'azienda stessa. Ad esempio, la partecipazione a Seminari in veste di uditore (e non come relatore) o a business meeting puramente interlocutori non configura una prestazione di servizio."
+msgstr "Per attività senza prestazione di servizio si intendono quelle attività il cui espletamento non soddisfa direttamente un bisogno economico o commerciale di un cliente, di un terzo o dell'azienda stessa. Ad esempio, la partecipazione a Seminari in veste di uditore (e non come relatore) o a business meeting puramente interlocutori non configura una prestazione di servizio."
+
+msgid "Per Azienda di gruppo si intendono quelle Aziende che sono parte di un medesimo gruppo societario riconosciuto, ossia filiali o controllate."
+msgstr "Per Azienda di gruppo si intendono quelle Aziende che sono parte di un medesimo gruppo societario riconosciuto, ossia filiali o controllate."
+
+msgid "Permesso di soggiorno per cittadini no-eu"
+msgstr "Permesso di soggiorno per cittadini no-eu"
+
+msgid "Persona fisica"
+msgstr "Persona fisica"
+
+msgid "Persona fisica proprietario di una ditta individuale"
+msgstr "Persona fisica proprietario di una ditta individuale"
+
+msgid "Persona giuridica"
+msgstr "Persona giuridica"
+
+msgid "Persona giuridica identificata in un’azienda o una società"
+msgstr "Persona giuridica identificata in un’azienda o una società"
+
+msgid "Pin Istituto Previdenziale"
+msgstr "Pin Istituto Previdenziale"
+
+msgid "Polizza assicurativa dell'azienda"
+msgstr "Polizza assicurativa dell'azienda"
+
+msgid "Privacy policy"
+msgstr "Privacy policy"
+
+msgid "premere Ctrl per selezione multipla"
+msgstr "premere Ctrl per selezione multipla"
+
+msgid "prestazione di servizi"
+msgstr "prestazione di servizi"
+
+msgid "Principale"
+msgstr "Principale"
+
+msgid "Primo alloggio"
+msgstr "Primo alloggio"
+
+msgid "Procedere con l'ordine di servizio"
+msgstr "Procedere con l'ordine di servizio"
+
+msgid "Prossimi 10 cantieri in partenza"
+msgstr "Prossimi 10 cantieri in partenza"
+
+msgid "Prossimi 10 Task in scadenza"
+msgstr "Prossimi 10 Task in scadenza"
+
+msgid "Prossimi 12 mesi"
+msgstr "Prossimi 12 mesi"
+
+msgid "Prossimo anno solare"
+msgstr "Prossimo anno solare"
+
+msgid "Provincia"
+msgstr "Provincia"
+
+msgid "Provincia di nascita"
+msgstr "Provincia di nascita"
+
+msgid "Qui"
+msgstr "Qui"
+
+msgid "Questionario sicurezza Covid-19"
+msgstr "Questionario sicurezza Covid-19"
+
+msgid "Ragione sociale"
+msgstr "Ragione sociale"
+
+msgid "Rapporto di lavoro para subordinato"
+msgstr "Rapporto di lavoro para subordinato"
+
+msgid "Rappresentante e tipo di Azienda"
+msgstr "Rappresentante e tipo di Azienda"
+
+msgid "Rappresentante Estero"
+msgstr "Rappresentante Estero"
+
+msgid "Rappresentante Estero ( Stati Rappresentati )"
+msgstr "Rappresentante Estero ( Stati Rappresentati )"
+
+msgid "Rappresentante legale"
+msgstr "Rappresentante legale"
+
+msgid "Rappresentante Legale"
+msgstr "Rappresentante Legale"
+
+msgid "Rappresentanti"
+msgstr "Rappresentanti"
+
+msgid "Registrato da"
+msgstr "Registrato da"
+
+msgid "Ricerca..."
+msgstr "Ricerca..."
+
+msgid "Richiesta Dichiarazione"
+msgstr "Richiesta Dichiarazione"
+
+msgid "Richiesto Da"
+msgstr "Richiesto Da"
+
+msgid "Riepilogo"
+msgstr "Riepilogo"
+
+msgid "Ruolo"
+msgstr "Ruolo"
+
+msgid "Salva"
+msgstr "Salva"
+
+msgid "Salva le tue risposte"
+msgstr "Salva le tue risposte"
+
+msgid "Scarica il questionario da"
+msgstr Scarica il questionario da"
+
+msgid "Scatto di anzianità"
+msgstr "Scatto di anzianità"
+
+msgid "Scegli file"
+msgstr "Scegli file"
+
+msgid "Scorsi 365 giorni"
+msgstr "Scorsi 365 giorni"
+
+msgid "Se hai inserito tutti i dati in maniera corretta procedi alla conferma dei dati"
+msgstr "Se hai inserito tutti i dati in maniera corretta procedi alla conferma dei dati"
+
+msgid "Sede"
+msgstr "Sede"
+
+msgid "Sede lavorativa"
+msgstr "Sede lavorativa"
+
+msgid "Sedi dell'Azienda"
+msgstr "Sedi dell'Azienda"
+
+msgid "Seguente"
+msgstr "Seguente"
+
+msgid "Seleziona"
+msgstr "Seleziona"
+
+msgid "Seleziona il cliente"
+msgstr "Seleziona il cliente"
+
+msgid "Seleziona ruolo"
+msgstr "Select role"
+
+msgid "Seleziona un appaltatore"
+msgstr "Seleziona un appaltatore"
+
+msgid "Seleziona uno o più appaltatori"
+msgstr "Seleziona uno o più appaltatori"
+
+msgid "Seleziona uno o più dipendenti"
+msgstr "Seleziona uno o più dipendenti"
+
+msgid "Seleziona un'opzione"
+msgstr "Seleziona un'opzione"
+
+msgid "Selezionare i Paesi per i quali si fornisce rappresentanza"
+msgstr "Selezionare i Paesi per i quali si fornisce rappresentanza"
+
+msgid "Selezionare il codice attività, o i codici relativi al servizio"
+msgstr "Selezionare il codice attività, o i codici relativi al servizio"
+
+msgid "Selezionare il Rappresentante"
+msgstr "Selezionare il Rappresentante"
+
+msgid "Selezionare la nazione che ospiterà il cantiere"
+msgstr "Selezionare la nazione che ospiterà il cantiere"
+
+msgid "SENZA"
+msgstr "SENZA"
+
+msgid "Servizi per l'Azienda (servizi offerti all'estero nell'esclusivo interesse del proprio datore di lavoro)"
+msgstr "Servizi per l'Azienda (servizi offerti all'estero nell'esclusivo interesse del proprio datore di lavoro)"
+
+msgid "Servizio Infragruppo (per Azienda esterna controllante, filiale o controllata)"
+msgstr "Servizio Infragruppo (per Azienda esterna controllante, filiale o controllata)"
+
+msgid "Servizio per un cliente finale"
+msgstr "Servizio per un cliente finale"
+
+msgid "Si"
+msgstr "Si"
+
+msgid "Si tratta di un Dipendente somministrato"
+msgstr "Si tratta di un Dipendente somministrato"
+
+msgid "Sono attivi anche degli appaltatori presso il cantiere"
+msgstr "Sono attivi anche degli appaltatori presso il cantiere"
+
+msgid "Sono presenti degli errori, correggerli e riprovare ad inviare la form"
+msgstr "Sono presenti degli errori, correggerli e riprovare ad inviare la form"
+
+msgid "Stato"
+msgstr "Stato"
+
+msgid "STATO"
+msgstr "STATO"
+
+msgid "STATO CANTIERE"
+msgstr "STATO CANTIERE"
+
+msgid "Stato civile"
+msgstr "Stato civile"
+
+msgid "Superminimo applicato"
+msgstr "Superminimo applicato"
+
+msgid "Task"
+msgstr "Task"
+
+msgid "Tasks"
+msgstr "Tasks"
+
+msgid "Tasks assegnati a terzi"
+msgstr "Tasks assegnati a terzi"
+
+msgid "Telefono"
+msgstr "Telefono"
+
+msgid "Tempo parziale"
+msgstr "Tempo parziale"
+
+msgid "Tempo pieno"
+msgstr "Tempo pieno"
+
+msgid "Termini e condizioni"
+msgstr "Termini e condizioni"
+
+msgid "testo"
+msgstr "testo"
+
+msgid "Tipologia di Anagrafica"
+msgstr "Tipologia di Anagrafica"
+
+msgid "Tipo file png jpg jpeg dimensioni 300x300px 72dpi"
+msgstr "Tipo file png jpg jpeg dimensioni 300x300px 72dpi"
+
+msgid "Tipologia di attività"
+msgstr "Tipologia di attività"
+
+msgid "Tipologia di attività : con prestazione di servizi / senza prestazione di servizi"
+msgstr "Tipologia di attività : con prestazione di servizi / senza prestazione di servizi"
+
+msgid "Tipologia di contratto"
+msgstr "Tipologia di contratto"
+
+msgid "Tipologia di filiale"
+msgstr "Tipologia di filiale"
+
+msgid "Tipologia di inserimento"
+msgstr "Tipologia di inserimento"
+
+msgid "Tipologie di attività con prestazione di servizi"
+msgstr "Tipologie di attività con prestazione di servizi"
+
+msgid "Torna al Cantiere"
+msgstr "Torna al Cantiere"
+
+msgid "Torna alla lista cantieri"
+msgstr "Torna alla lista cantieri"
+
+msgid "Trasferte precedenti presso lo stesso cantiere non registrate nel Portale"
+msgstr "Trasferte precedenti presso lo stesso cantiere non registrate nel Portale"
+
+msgid "Turnover globale"
+msgstr "Turnover globale"
+
+msgid "Turnover in Italia"
+msgstr "Turnover in Italia"
+
+msgid "Tutorials"
+msgstr "Tutorials"
+
+msgid "Tutti"
+msgstr "Tutti"
+
+msgid "Tutti gli utenti"
+msgstr "Tutti gli utenti"
+
+msgid "Ufficio Milano"
+msgstr "Ufficio Milano"
+
+msgid "Ulteriori giorni di trasferta non inseriti nel sistema"
+msgstr "Ulteriori giorni di trasferta non inseriti nel sistema"
+
+msgid "Ultima news"
+msgstr "Ultima news"
+
+msgid "Ultimi 12 mesi"
+msgstr "Ultimi 12 mesi"
+
+msgid "Username Istituto Previdenziale"
+msgstr "Username Istituto Previdenziale"
+
+msgid "Utenti"
+msgstr "Utenti"
+
+msgid "Vai ai documenti"
+msgstr "Vai ai documenti"
+
+msgid "Vai al riepilogo"
+msgstr "Vai al riepilogo"
+
+msgid "Vai alle comunicazioni"
+msgstr "Vai alle comunicazioni"
+
+msgid "Vai alla conferma"
+msgstr "Vai alla conferma"
+
+msgid "Valuta:"
+msgstr "Valuta:"
+
+msgid "Vedi:"
+msgstr "Vedi:"
+
+msgid "Vedi assegnazioni dipendenti somministrati"
+msgstr "Vedi assegnazioni dipendenti somministrati"
+
+msgid "Vedi i miei cantieri"
+msgstr "Vedi i miei cantieri"
+
+msgid "Vedi i miei clienti"
+msgstr "Vedi i miei clienti"
+
+msgid "Vedi i miei dipendenti"
+msgstr "Vedi i miei dipendenti"
+
+msgid "Vedi i miei dipendenti somministrati"
+msgstr "Vedi i miei dipendenti somministrati"
+
+msgid "Vedi i miei fornitori"
+msgstr "Vedi i miei fornitori"
+
+msgid "Vedi i miei rappresentanti"
+msgstr "Vedi i miei rappresentanti"
+
+msgid "Vedi i miei task"
+msgstr "Vedi i miei task"
+
+msgid "Vedi i miei utenti"
+msgstr "Vedi i miei utenti"
+
+msgid "Vedi impostazioni task"
+msgstr "Vedi impostazioni task"
+
+msgid "Vedi tutti gli utenti"
+msgstr "Vedi tutti gli utenti"
+
+msgid "Verifica"
+msgstr "Verifica"
+
+msgid "Via / Piazza"
+msgstr "Via / Piazza"
+
+msgid "Visura camerale"
+msgstr "Visura camerale"
+
+msgid "Vuoi aggiungere un nuovo ruolo"
+msgstr "Vuoi aggiungere un nuovo ruolo"
+
+msgid "Questionario Covid-19"
+msgstr "Questionario Covid-19"
+
+msgid "Invia Questionario Covid-19"
+msgstr "Invia Questionario Covid-19"
+
+msgid "Scarica Questionario Covid-19"
+msgstr "Scarica Questionario Covid-19"
+
+msgid "Invia lettera invito al Cliente"
+msgstr "Invia lettera invito al Cliente"
+
+msgid "Scarica lettera invito"
+msgstr "Scarica lettera invito"
+
+msgid "Invia lettera incarico"
+msgstr "Invia lettera incarico"
+
+msgid "Scarica lettera incarico"
+msgstr "Scarica lettera incarico"
+
+msgid "Vai allo stato"
+msgstr "Vai allo stato"
+
+msgid "Torna all lista cantieri"
+msgstr "Torna all lista cantieri"
+
+

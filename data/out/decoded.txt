@@ -1,0 +1,88 @@
+Array
+(
+    [translations] => Array
+        (
+            [name] => test.js
+            [data] => Array
+                (
+                    [msgs] => Array
+                        (
+                            [confirm] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => a
+                                            [untraslated] => Alfa
+                                            [traslation] => Alpha
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [id] => b
+                                            [untraslated] => Beta
+                                            [traslation] => Beta
+                                        )
+
+                                )
+
+                            [err] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => a
+                                            [untraslated] => Alfa
+                                            [traslation] => Alpha
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [id] => b
+                                            [untraslated] => Beta
+                                            [traslation] => Beta
+                                        )
+
+                                )
+
+                        )
+
+                    [labels] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => c
+                                    [untraslated] => Gamma
+                                    [traslation] => Gamma
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => d
+                                    [untraslated] => Delta
+                                    [traslation] => Delta
+                                )
+
+                            [e] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => one
+                                            [untraslated] => Uno
+                                            [traslation] => One
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [id] => two
+                                            [untraslated] => Due
+                                            [traslation] => Two
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
