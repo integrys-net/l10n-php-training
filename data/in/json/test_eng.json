@@ -1,0 +1,132 @@
+{
+ "translations": {
+  "name": "test_eng.po",
+  "data": [{
+    "context": "",
+    "idKey": {
+     "singular": [
+      "Pippo"
+     ],
+     "plurals": []
+    },
+    "untraslated": {
+     "singular": [
+      ""
+     ],
+     "plurals": []
+    },
+    "traslation": {
+     "singular": [
+      [
+       "Goofy"
+      ]
+     ],
+     "plurals": []
+    }
+   },
+   {
+    "context": "",
+    "idKey": {
+     "singular": [
+      "",
+      "Topolino e Minnie",
+      "Paperino e Paperina"
+     ],
+     "plurals": []
+    },
+    "untraslated": {
+     "singular": [
+      "",
+      "",
+      ""
+     ],
+     "plurals": []
+    },
+    "traslation": {
+     "singular": [
+      "",
+      "Mickey Mouse & Minnie",
+      "Donald Duck & Misses Duck"
+     ],
+     "plurals": []
+    }
+   },
+   {
+    "context": "",
+    "idKey": {
+     "singular": [
+      "",
+      "Spiacente, c'\u00e8 stato un problema verificando il percorso corretto per i file."
+     ],
+     "plurals": []
+    },
+    "untraslated": {
+     "singular": [
+      "",
+      ""
+     ],
+     "plurals": []
+    },
+    "traslation": {
+     "singular": [
+      "",
+      "Sorry, there was a problem verifying the correct path to the files."
+     ],
+     "plurals": []
+    }
+   },
+   {
+    "context": "",
+    "idKey": {
+     "singular": [
+      "Oca"
+     ],
+     "plurals": [
+      "Oche"
+     ]
+    },
+    "untraslated": {
+     "singular": [
+      ""
+     ],
+     "plurals": [
+      "",
+      ""
+     ]
+    },
+    "traslation": {
+     "singular": [
+      "Owl"
+     ],
+     "plurals": [
+      "Owl",
+      "Owls"
+     ]
+    }
+   },
+   {
+    "context": "",
+    "idKey": {
+     "singular": [
+      "Zio Paperone"
+     ],
+     "plurals": []
+    },
+    "untraslated": {
+     "singular": [
+      ""
+     ],
+     "plurals": []
+    },
+    "traslation": {
+     "singular": [
+      [
+       "Uncle Paperone"
+      ]
+     ],
+     "plurals": []
+    }
+   }
+  ]
+ }
+}
