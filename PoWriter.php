@@ -5,71 +5,159 @@ define('DS', DIRECTORY_SEPARATOR);
 define('JSON_TRANSLATED_FILE', "test_eng.json");
 
 define('INPUT_PATH', __DIR__ . DS . "data" . DS . "in" . DS . "json" . DS);
-define('OUTPUT_PATH', __DIR__ . DS . "data" . DS . "out" . DS . "js" . DS);
+define('OUTPUT_PATH', __DIR__ . DS . "data" . DS . "out" . DS . "po" . DS);
 //
 define('READ', "r");
 define('WRITE', "w");
 define('APPEND', "a");
 define('READ_WRITE', "a+");
+//
+define('PO_EMPTY_LINE', '');
+define('PO_MSGCTX', 'msgctx "');
+define('PO_MSGID', 'msgid "');
+define('PO_MSGID_PLURAL', 'msgid_plural "');
+define('PO_MSGSTR', 'msgstr "');
+define('PO_MSGSTR_PLURAL', 'msgstr[');
+define('PO_MSGSTR_PLURAL_END_TKN', ']');
+//
+define('SINGULAR', "singular");
+define('PLURALS', "plurals");
+//
+define('MULTILINE', "multiline");
 
 //
-define('TRANSLATION_OBJ_ID', "id");
-define('TRANSLATION_OBJ_TRANSLATION', "traslation");
+define('TRANSLATION_OBJ_CTX', "context");
+define('TRANSLATION_OBJ_ID', "idKey");
 define('TRANSLATION_OBJ_UNTRANSLATED', "untraslated");
+define('TRANSLATION_OBJ_TRANSLATION', "traslation");
 
-function getLeftPaddedString(string $str, int $padLen)
+function parsePoTranslation(&$oResource, array $data)
 {
-    $strLen = strlen($str);
-    return str_pad($str, $strLen + $padLen, " ", STR_PAD_LEFT);
-}
 
-function addTermination(&$resource, bool $append)
-{
-    if ($append) {
-        fwrite($resource, "," . PHP_EOL);
-        return false;
+    foreach ($data as $gValue) {
+        if (is_array($gValue)) {
+            writePoGroup($oResource, $gValue);
+        }
+        fwrite($oResource, PHP_EOL);
     }
-    fwrite($resource, PHP_EOL);
-    return $append;
 }
 
-function writeJSObj(&$resource, array $group, int &$level)
+function writePoGroup(&$oResource, array $group)
 {
-    $insertTerminantion = true;
-    $groupLen = count($group);
-    $groupEl = 0;
+    $scope = [];
     foreach ($group as $groupKey => $groupValue) {
         if (is_string($groupKey)) {
-            if (is_array($groupValue)) {
-                ++$level;
-                $key = getLeftPaddedString($groupKey, $level);
-                fwrite($resource, $key . ": {" . PHP_EOL);
-                writeJSObj($resource, $groupValue, $level);
-                fwrite($resource, getLeftPaddedString("}", $level));
-                $insertTerminantion = addTermination($resource, $insertTerminantion);
-                --$level;
-                continue;
+            switch ($groupKey) {
+                case TRANSLATION_OBJ_CTX:
+                    if (!empty($groupValue)) {
+                        fwrite($oResource, PO_MSGCTX . $groupValue . '"' . PHP_EOL);
+                    }
+                    break;
+                case TRANSLATION_OBJ_ID:
+                    if (1 === count($groupValue[PLURALS])) {
+                        fwrite($oResource, PO_MSGID . $groupValue[SINGULAR][0] . '"' . PHP_EOL);
+                        fwrite($oResource, PO_MSGID_PLURAL . $groupValue[PLURALS][0] . '"' . PHP_EOL);
+                        $scope[] = PLURALS;
+                    } elseif (1 === count($groupValue[SINGULAR])) {
+                        fwrite($oResource, PO_MSGID . $groupValue[SINGULAR][0] . '"' . PHP_EOL);
+                        $scope[] = SINGULAR;
+                    } elseif (1 < count($groupValue[SINGULAR])) {
+
+                        writeMultiRow($oResource, PO_MSGID, ' "', $groupValue[SINGULAR]);
+                        // foreach ($groupValue[SINGULAR] as $gIndex => $gValue) {
+                        //     if (!$gIndex) {
+                        //         fwrite($oResource, PO_MSGID . $gValue . '"' . PHP_EOL);
+                        //     }
+                        //     if (1 <= $gIndex) {
+                        //         fwrite($oResource, ' "' . $gValue . '"' . PHP_EOL);
+                        //     }
+                        // }
+                        $scope = [SINGULAR, MULTILINE];
+                    }
+                    // writeRow($oResource, $rowParts, 2 < count($scope) ? $scope[1] : $scope);
+                    break;
+                case TRANSLATION_OBJ_TRANSLATION:
+
+                    switch (count($scope)) {
+                        case 2:
+                            writeMultiRow($oResource, PO_MSGSTR, ' "', $groupValue[$scope[0]]);
+                            // foreach ($groupValue[$scope[0]] as $gIndex => $gValue) {
+                            //     if (!$gIndex) {
+                            //         fwrite($oResource, PO_MSGSTR . $gValue . '"' . PHP_EOL);
+                            //     }
+                            //     if (1 <= $gIndex) {
+                            //         fwrite($oResource, ' "' . $gValue . '"' . PHP_EOL);
+                            //     }
+                            // }
+
+                            break;
+                        case 1:
+                            if (SINGULAR === $scope[0]) {
+                                fwrite($oResource, PO_MSGSTR . $groupValue[$scope[0]][0][0] . '"' . PHP_EOL);
+                            } elseif (PLURALS === $scope[0]) {
+                                foreach ($groupValue[PLURALS] as $gIndex => $gValue) {
+                                    if (!$gIndex) {
+                                        fwrite($oResource, PO_MSGSTR_PLURAL . $gIndex . PO_MSGSTR_PLURAL_END_TKN . ' "' . $groupValue[SINGULAR][$gIndex] . '"' . PHP_EOL);
+                                    }
+                                    if (1 <= $gIndex) {
+                                        fwrite($oResource, PO_MSGSTR_PLURAL . $gIndex . PO_MSGSTR_PLURAL_END_TKN . ' "' . $groupValue[$scope[0]][$gIndex] . '"' . PHP_EOL);
+                                    }
+                                }
+                            }
+                            break;
+                        default:
+                            break;
+                    }
+                    break;
+                default:
+                    break;
             }
-            $key = getLeftPaddedString($groupKey, $level);
-            fwrite($resource, $key . ': "' . $groupValue . '"');
-            $insertTerminantion = addTermination($resource, $insertTerminantion);
-        } elseif (is_int($groupKey)) {
-            $id = $groupValue[TRANSLATION_OBJ_ID];
-            $value = $groupValue[TRANSLATION_OBJ_TRANSLATION];
-            $key = getLeftPaddedString($id, $level + 1);
-            fwrite($resource, $key . ': "' . $value . '"');
-            $groupEl++;
-            $insertTerminantion = addTermination($resource, $groupEl < $groupLen);
         }
+        // writeRow($oResource, $rowParts, 2 < count($scope) ? $scope[1] : $scope);
+    }
+}
+
+function writeMultiRow(&$oResource, string $firstRowPrefix, string $rowsPrefix, array $data)
+{
+    foreach ($data as $dIndex => $dValue) {
+        if (!$dIndex) {
+            fwrite($oResource, $firstRowPrefix . $dValue);
+        }
+        if (1 <= $dIndex) {
+            fwrite($oResource, $rowsPrefix . $dValue);
+        }
+        fwrite($oResource, '"' . PHP_EOL);
+    }
+}
+
+function writeRow(&$oResource, $rowParts, string $scope)
+{
+    $row = "";
+    $isMultiline = MULTI_LINE === $scope;
+    foreach ($rowParts as $rowValue) {
+        if ($isMultiline) {
+            foreach ($rowValue as $rIndex => $rValue) {
+                if (!$rIndex) {
+                    $row = $rValue;
+                }
+                if (1 <= $rIndex) {
+                    $row = $rValue;
+                }
+                $row .= '"' . PHP_EOL;
+                fwrite($oResource, $row);
+            }
+        }
+        $row =  is_array($rowValue) ? implode('', $rowValue) : $rowValue;
+        $row .= '"' . PHP_EOL;
+        fwrite($oResource, $row);
     }
 }
 
 // Application
-$inFile = INPUT_PATH . IN_JS_TEST_FILE;
+$inFile = INPUT_PATH . JSON_TRANSLATED_FILE;
 $fileContent = file_get_contents($inFile);
 
 $data = json_decode($fileContent, true);
-file_put_contents(OUTPUT_PATH . "decoded.txt", print_r($data, true));
 
 if (!array_key_exists('translations', $data) || !array_key_exists('name', $data['translations'])) {
     die();
@@ -84,27 +172,8 @@ $fileName = $data['translations']['name'];
 $objName = substr($data['translations']['name'], 0, $extSepPos);
 
 $oFile = OUTPUT_PATH . $fileName;
-$oFH = fopen($oFile, WRITE);
-// Begin JS Object
+$oFH = fopen($oFile, "w");
 
-$level = 1;
-$insertTerminantion = true;
-foreach ($data['translations']['data'] as $dKey => $dValue) {
-    if (is_string($dKey)) {
-        $key = getLeftPaddedString($dKey, $level);
-        if (is_array($dValue)) {
-            fwrite($oFH, $key . ": {" . PHP_EOL);
-            writeJSObj($oFH, $dValue, $level);
-            fwrite($oFH, getLeftPaddedString("}", $level));
-            $insertTerminantion = addTermination($oFH, $insertTerminantion);
-            continue;
-        }
-        fwrite($oFH, $key . ": " . $dValue);
-        $insertTerminantion = addTermination($oFH, !$insertTerminantion);
-    } elseif (is_int($dKey)) {
-        fwrite($oFH, $dValue[TRANSLATION_OBJ_ID] . ": " . $dValue[TRANSLATION_OBJ_TRANSLATION] . "," . PHP_EOL);
-        $insertTerminantion = addTermination($oFH, $insertTerminantion);
-    }
-}
+parsePoTranslation($oFH, $data['translations']['data']);
 
 fclose($oFH);
