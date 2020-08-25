@@ -64,32 +64,14 @@ function writePoGroup(&$oResource, array $group)
                     } elseif (1 < count($groupValue[SINGULAR])) {
 
                         writeMultiRow($oResource, PO_MSGID, ' "', $groupValue[SINGULAR]);
-                        // foreach ($groupValue[SINGULAR] as $gIndex => $gValue) {
-                        //     if (!$gIndex) {
-                        //         fwrite($oResource, PO_MSGID . $gValue . '"' . PHP_EOL);
-                        //     }
-                        //     if (1 <= $gIndex) {
-                        //         fwrite($oResource, ' "' . $gValue . '"' . PHP_EOL);
-                        //     }
-                        // }
                         $scope = [SINGULAR, MULTILINE];
                     }
-                    // writeRow($oResource, $rowParts, 2 < count($scope) ? $scope[1] : $scope);
                     break;
                 case TRANSLATION_OBJ_TRANSLATION:
 
                     switch (count($scope)) {
                         case 2:
                             writeMultiRow($oResource, PO_MSGSTR, ' "', $groupValue[$scope[0]]);
-                            // foreach ($groupValue[$scope[0]] as $gIndex => $gValue) {
-                            //     if (!$gIndex) {
-                            //         fwrite($oResource, PO_MSGSTR . $gValue . '"' . PHP_EOL);
-                            //     }
-                            //     if (1 <= $gIndex) {
-                            //         fwrite($oResource, ' "' . $gValue . '"' . PHP_EOL);
-                            //     }
-                            // }
-
                             break;
                         case 1:
                             if (SINGULAR === $scope[0]) {
@@ -100,7 +82,7 @@ function writePoGroup(&$oResource, array $group)
                                         fwrite($oResource, PO_MSGSTR_PLURAL . $gIndex . PO_MSGSTR_PLURAL_END_TKN . ' "' . $groupValue[SINGULAR][$gIndex] . '"' . PHP_EOL);
                                     }
                                     if (1 <= $gIndex) {
-                                        fwrite($oResource, PO_MSGSTR_PLURAL . $gIndex . PO_MSGSTR_PLURAL_END_TKN . ' "' . $groupValue[$scope[0]][$gIndex] . '"' . PHP_EOL);
+                                        fwrite($oResource, PO_MSGSTR_PLURAL . $gIndex . PO_MSGSTR_PLURAL_END_TKN . ' "' . $gValue[$gIndex] . '"' . PHP_EOL);
                                     }
                                 }
                             }
