@@ -2,9 +2,9 @@
 
 define('DS', DIRECTORY_SEPARATOR);
 //
-define('IN_ITA_JS_FILE', "test_ita.po");
-define('IN_ENG_JS_FILE', "test_eng.po");
-define('OUT_JSON_FILE', "test_eng.json");
+define('ITA_PO_FILE', "test_ita.po");
+define('ENG_PO_FILE', "test_eng.po");
+define('JSON_FILE', "test_eng.json");
 
 define('INPUT_PATH', __DIR__ . DS . "data" . DS . "in" . DS . "po" . DS);
 define('OUTPUT_PATH', __DIR__ . DS . "data" . DS . "out" . DS . "json" . DS);
@@ -47,11 +47,30 @@ function getEmptyArray()
 //
 function getHeaderKW(string $str)
 {
-    $headKWSpaceSepPos = strpos($str, " ");
-    if (!$headKWSpaceSepPos) {
+    $headerKWSpaceSepPos = strpos($str, " ");
+    if (!$headerKWSpaceSepPos) {
         return trim($str);
     }
-    return substr($str, 0, $headKWSpaceSepPos);
+    return substr($str, 0, $headerKWSpaceSepPos);
+}
+
+function isNotEmpty($value)
+{
+    return !empty($value);
+}
+
+//
+function writeValue(&$dest, $trueResultStr, $falseResultStr, array $valuesChecked, callable $mappedFunction)
+{
+    $hasTranslation = true;
+    foreach ($valuesChecked as $value) {
+        $hasTranslation = $hasTranslation && $mappedFunction($value);
+    }
+    if (is_array($dest)) {
+        $dest[] = $hasTranslation ? $trueResultStr : $falseResultStr;
+        return;
+    }
+    $dest = $hasTranslation ? $trueResultStr : $falseResultStr;
 }
 
 //
@@ -72,12 +91,12 @@ function parsePO(&$baseResource, array $translatedData, array &$translations)
     $type = "";
     $mLIndex = 1;
 
-    // Read Content
+    // "r" Content
     while ($line = fgets($baseResource)) {
         $line = trim($line);
 
         switch (true) {
-                // Check if read data group finished
+                // Check if "r" data group finished
             case ('' === $line):
                 if (1 <= count($group[TRANSLATION_OBJ_ID][$type])) {
                     if (in_array(MULTI_LINE, $scope)) {
@@ -95,7 +114,7 @@ function parsePO(&$baseResource, array $translatedData, array &$translations)
 
                 // Check if line begin with msgid
             case (PO_MSGID === substr($line, 0, PO_MSGID_LEN)):
-                // save value and proceed to read new group
+                // save value and proceed to "r" new group
                 $idKey = substr($line, PO_MSGID_LEN, END_OF_STRING);
                 $type = SINGULAR;
                 if ("" !== $idKey) {
@@ -110,8 +129,8 @@ function parsePO(&$baseResource, array $translatedData, array &$translations)
                 $type = SINGULAR;
                 if ("" !== $l10nTxt) {
                     $treeKey = buildNodeKey($group[TRANSLATION_OBJ_ID][$type]);
-                    $group[TRANSLATION_OBJ_UNTRANSLATED][$type][] = !empty($translatedData[$treeKey]) ? "" : stripcslashes($l10nTxt);
-                    $group[TRANSLATION_OBJ_TRANSLATION][$type][] = !empty($translatedData[$treeKey]) ? $translatedData[$treeKey] : "";
+                    writeValue($group[TRANSLATION_OBJ_UNTRANSLATED][$type], "", stripcslashes($l10nTxt), [$translatedData, $treeKey], 'isNotEmpty');
+                    writeValue($group[TRANSLATION_OBJ_TRANSLATION][$type], $translatedData[$treeKey], "", [$translatedData, $treeKey], 'isNotEmpty');
                 }
                 $scope = [PO_MSGSTR];
                 break;
@@ -125,8 +144,10 @@ function parsePO(&$baseResource, array $translatedData, array &$translations)
                 }
                 if (PO_MSGSTR === $scope[0]) {
                     $treeKey = buildNodeKey($group[TRANSLATION_OBJ_ID][$type]);
-                    $group[TRANSLATION_OBJ_UNTRANSLATED][$type][] = !empty($translatedData[$treeKey]) ? "" : substr($line, 1, END_OF_STRING);
-                    $group[TRANSLATION_OBJ_TRANSLATION][$type][] = !empty($translatedData[$treeKey]) ? $translatedData[$treeKey][$mLIndex] : "";
+                    if (isset($treeKey)) {
+                        writeValue($group[TRANSLATION_OBJ_UNTRANSLATED][$type], "", stripcslashes(substr($line, 1, END_OF_STRING)), [$translatedData, $treeKey], 'isNotEmpty');
+                        writeValue($group[TRANSLATION_OBJ_TRANSLATION][$type], $translatedData[$treeKey][$mLIndex], "", [$translatedData, $treeKey], 'isNotEmpty');
+                    }
                     ++$mLIndex;
                 }
                 break;
@@ -156,11 +177,15 @@ function parsePO(&$baseResource, array $translatedData, array &$translations)
                         $group[TRANSLATION_OBJ_ID][$type][$typeRowIndex]
                     ]);
                     if (!$row) {
-                        $group[TRANSLATION_OBJ_UNTRANSLATED][SINGULAR][$row] = !empty($translatedData[$treeKey]) ? "" : $pL10nTxt;
-                        $group[TRANSLATION_OBJ_TRANSLATION][SINGULAR][$row] = !empty($translatedData[$treeKey]) ? $translatedData[$treeKey][$row] : "";
+                        writeValue($group[TRANSLATION_OBJ_UNTRANSLATED][SINGULAR][$row], "", stripcslashes($pL10nTxt), [$translatedData, $treeKey], 'isNotEmpty');
+                        writeValue($group[TRANSLATION_OBJ_TRANSLATION][SINGULAR][$row], $translatedData[$treeKey][$row], "", [$translatedData, $treeKey], 'isNotEmpty');
+                        // $group[TRANSLATION_OBJ_UNTRANSLATED][SINGULAR][$row] = (!empty($translatedData) && !empty($treeKey)) ? "" : $pL10nTxt;
+                        // $group[TRANSLATION_OBJ_TRANSLATION][SINGULAR][$row] = (!empty($translatedData) && !empty($treeKey)) ? $translatedData[$treeKey][$row] : "";
                     }
-                    $group[TRANSLATION_OBJ_UNTRANSLATED][$type][$row] = !empty($translatedData[$treeKey]) ? "" : $pL10nTxt;
-                    $group[TRANSLATION_OBJ_TRANSLATION][$type][$row] = !empty($translatedData[$treeKey]) ? $translatedData[$treeKey][$row] : "";
+                    writeValue($group[TRANSLATION_OBJ_UNTRANSLATED][$type][$row], "", stripcslashes($pL10nTxt), [$translatedData, $treeKey], 'isNotEmpty');
+                    writeValue($group[TRANSLATION_OBJ_TRANSLATION][$type][$row], $translatedData[$treeKey][$row], "", [$translatedData, $treeKey], 'isNotEmpty');
+                    // $group[TRANSLATION_OBJ_UNTRANSLATED][$type][$row] = (!empty($translatedData) && !empty($treeKey)) ? "" : $pL10nTxt;
+                    // $group[TRANSLATION_OBJ_TRANSLATION][$type][$row] = (!empty($translatedData) && !empty($treeKey)) ? $translatedData[$treeKey][$row] : "";
                 }
                 $scope = [PO_MSGSTR_PLURAL];
                 break;
@@ -192,13 +217,13 @@ function buildPOTree(&$resource)
         $line = trim($line);
 
         switch (true) {
-                // Check if read data group finished
+                // Check if "r" data group finished
             case ('' === $line):
                 if (1 <= count($treeNode['key'])) {
 
-                    if (in_array(MULTI_LINE, $scope)) {
-                        array_unshift($treeNode['value'], "");
-                    }
+                    // if (in_array(MULTI_LINE, $scope)) {
+                    //     array_unshift($treeNode['value'], "");
+                    // }
                     $treeKey = buildNodeKey($treeNode['key']);
                     addTreeNode($treeKey, $treeNode['value'], $tree);
                 }
@@ -214,7 +239,7 @@ function buildPOTree(&$resource)
 
                 // Check if line begin with msgid
             case (PO_MSGID === substr($line, 0, PO_MSGID_LEN)):
-                // save value and proceed to read new group
+                // save value and proceed to "r" new group
                 $idKey = substr($line, PO_MSGID_LEN, END_OF_STRING);
                 if ("" !== $idKey) {
                     $treeNode['key'][] = $idKey;
@@ -225,9 +250,7 @@ function buildPOTree(&$resource)
                 // Check if line begin with msgstr
             case (PO_MSGSTR === substr($line, 0, PO_MSGSTR_LEN)):
                 $l10nTxt = substr($line, PO_MSGSTR_LEN, END_OF_STRING);
-                if ("" !== $l10nTxt) {
-                    $treeNode['value'][] = $l10nTxt;
-                }
+                $treeNode['value'][] = ("" !== $l10nTxt) ? $l10nTxt : "";
                 $scope = [PO_MSGSTR];
                 break;
                 // Check if line is part of multi line idKey
@@ -293,28 +316,25 @@ function buildNodeKey(array $keyParts, string $joinChar = '_')
 }
 
 //
-$baseFileName = INPUT_PATH . IN_ITA_PO_FILE;
-$baseFH = fopen($baseFileName, READ);
+$baseFileName = INPUT_PATH . ITA_PO_FILE;
+$baseFH = fopen($baseFileName, "r");
 $translatedFH = null;
 
-$baseTree = [];
 $translatedTree = [];
 
-$translatedFileName = INPUT_PATH . IN_ENG_PO_FILE;
+$translatedFileName = INPUT_PATH . ENG_PO_FILE;
 if (file_exists($translatedFileName)) {
-    $translatedFH = fopen($translatedFileName, READ);
+    $translatedFH = fopen($translatedFileName, "r");
     $translatedTree = buildPOTree($translatedFH);
     fclose($translatedFH);
 }
 
 $tData = [];
-$tData['translations']['name'] = IN_ENG_PO_FILE;
+$tData['translations']['name'] = ENG_PO_FILE;
 
 if (!array_key_exists('data', $tData['translations'])) {
     $tData['translations']['data'] = [];
 }
-
-
 
 parsePO($baseFH, $translatedTree, $tData['translations']['data']);
 
@@ -323,4 +343,4 @@ if ($baseFH) {
 }
 
 $fileContent = json_encode($tData, JSON_PRETTY_PRINT);
-file_put_contents(OUTPUT_PATH . OUT_TEST_FILE,  $fileContent, LOCK_EX);
+file_put_contents(OUTPUT_PATH . JSON_FILE,  $fileContent, LOCK_EX);
